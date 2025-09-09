@@ -37,7 +37,7 @@ export function Navbar() {
           className="font-semibold tracking-tight"
         >
           <span className="sr-only">Home</span>
-          chidiebere<span className="text-muted-foreground">.dev</span>
+          chidiebereuzoma<span className="text-muted-foreground">.dev</span>
         </Link>
 
         {/* Desktop nav */}
