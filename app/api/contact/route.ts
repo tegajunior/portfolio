@@ -8,8 +8,8 @@ export async function POST(req: Request) {
     const { name, email, message } = await req.json()
 
     await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>', // must be verified on Resend
-      to: 'delivered@resend.dev',
+      from: 'Portfolio Contact <hello@chidiebereuzoma.dev>', // must be verified on Resend
+      to: 'chidiebereuzomahumble@gmail.com', // your email where you'll receive the messages
       subject: `New message from ${name}`,
       replyTo: email,
       html: `

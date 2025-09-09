@@ -4,8 +4,11 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 
 export const metadata = {
-  title: 'Your Name | Portfolio',
+  title: 'Chidiebere | Portfolio',
   description: 'Frontend / Fullstack Web Developer Portfolio',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
