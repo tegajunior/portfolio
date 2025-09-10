@@ -16,6 +16,7 @@ type ProjectProps = {
   tech: string[]
   link: string
   github: string
+  owner: string
 }
 
 export function ProjectCard({
@@ -25,6 +26,7 @@ export function ProjectCard({
   tech,
   link,
   github,
+  owner,
 }: ProjectProps) {
   return (
     <motion.div
@@ -34,7 +36,7 @@ export function ProjectCard({
       }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
-      <Card className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition">
+      <Card className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition h-full">
         <div className="relative h-48 w-full">
           <Image
             src={image}
@@ -48,6 +50,10 @@ export function ProjectCard({
           <CardDescription>{description}</CardDescription>
         </CardHeader>
         <CardContent>
+          <div className="flex mb-2 items-center">
+            <span className="text-xs text-muted-foreground">Owner:</span>
+            <span className="ml-1 text-xs font-medium">{owner}</span>
+          </div>
           <div className="flex flex-wrap gap-2">
             {tech.map((t) => (
               <span
@@ -65,15 +71,17 @@ export function ProjectCard({
             target="_blank"
             className="text-sm text-blue-500 hover:underline"
           >
-            Live Demo
+            See Here
           </a>
-          <a
-            href={github}
-            target="_blank"
-            className="text-sm text-gray-500 hover:underline"
-          >
-            GitHub
-          </a>
+          {owner === 'Chidiebere Uzoma' && (
+            <a
+              href={github}
+              target="_blank"
+              className="text-sm text-gray-500 hover:underline"
+            >
+              GitHub
+            </a>
+          )}
         </CardFooter>
       </Card>
     </motion.div>
