@@ -66,6 +66,15 @@ export default function Projects() {
       github: 'N/A',
       owner: 'Gradely NG',
     },
+    {
+      title: 'Spunky SDX',
+      description: 'A web3 platform for decentralized applications.',
+      image: '/images/spunkysdximage.png',
+      tech: ['Reactjs', 'Redux', 'ethers', 'TailwindCSS'],
+      link: 'https://dapp.spunkysdx.io/',
+      github: 'N/A',
+      owner: 'Spunky SDX',
+    },
   ]
 
   return (
