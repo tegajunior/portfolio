@@ -15,6 +15,24 @@ export default function Projects() {
       owner: 'Chidiebere Uzoma',
     },
     {
+      title: 'Peer-to-Peer Messaging App',
+      description:
+        'A Node.js and Socket.io powered real-time messaging application. It uses network sockets to enable direct communication between users without a central server. Offline messaging is supported by storing messages locally until the recipient is online. Conversations are not persisted once the users goes offline, ensuring privacy and data security. There is online presence indication to show when users are available for chat.',
+      image: '/images/chatclientimage.png',
+      tech: [
+        'Nuxt/Vuejs',
+        'Node.js',
+        'MongoDB Atlas',
+        'Express',
+        'Feather.js',
+        'Socket.io',
+        'TailwindCSS',
+      ],
+      link: 'https://jade-sundae-6b3659.netlify.app/',
+      github: 'https://github.com/tegajunior/P2P-chat-client',
+      owner: 'Chidiebere Uzoma',
+    },
+    {
       title: 'Food Ordering App',
       description:
         'A fullstack platform for ordering food for outdoor events with guest checkout.',
@@ -22,7 +40,7 @@ export default function Projects() {
       tech: ['Next.js', 'Node.js', 'MongoDB', 'Express', 'NodeMailer'],
       link: 'https://ruebyscuisine.food/',
       github: 'https://github.com/tegajunior/ruebys-cuisine',
-      owner: "Rueby 's Kitchen",
+      owner: 'Chidiebere Uzoma',
     },
     {
       title: 'The Business Hub',
@@ -79,7 +97,15 @@ export default function Projects() {
 
   return (
     <section className="py-16 space-y-8">
-      <h2 className="text-3xl font-bold">Projects</h2>
+      <div className="space-y-4">
+        <h2 className="text-3xl font-bold">Projects</h2>
+        <p className="text-sm text-muted-foreground max-w-2xl">
+          <span className="font-semibold">Note:</span> Some projects are solely
+          developed by me, while others are team projects to which I
+          contributed. Please refer to the project details and GitHub links to
+          learn more about my specific contributions.
+        </p>
+      </div>
       <motion.div
         initial="hidden"
         animate="visible"
