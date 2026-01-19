@@ -5,14 +5,28 @@ import { ProjectCard } from '@/components/ProjectCard'
 export default function Projects() {
   const projects = [
     {
-      title: 'Portfolio Website',
+      title: 'Online Quiz Management Application',
       description:
-        'My personal developer portfolio built with Next.js and TailwindCSS.',
-      image: '/images/portfolioimage.png',
-      tech: ['Next.js', 'TailwindCSS', 'framer-motion', 'Vercel'],
-      link: 'https://chidiebereuzoma.dev/',
+        'A comprehensive quiz management application that enables users to create, manage, and take quizzes online. It features user authentication, quiz creation with two questions creation mode i.e manual vs AI-assisted, webcam proctoring during quiz taking to prevent cheating with 30 seconds interval screenshots of the student and audio recording of each session, quiz taking invite via email, review of quiz attempts with buttons for flagging or approving a students attempt, export students results to excel/csv for further review and integration, and detailed performance analytics. The application is built with a focus on scalability and user experience, making it suitable for educational institutions and corporate training programs.',
+      image: '/images/quizzitimage.png',
+      tech: [
+        'Next.js',
+        'TailwindCSS',
+        'Next API Routes',
+        'MongoDB',
+        'groq-sdk',
+        'groq-sdk',
+        'mammoth',
+        'resend',
+        'zod',
+        'jsonwebtoken',
+        'axios',
+        'Vercel',
+      ],
+      link: 'https://quizzit.live/',
       github: 'https://github.com/tegajunior/portfolio',
       owner: 'Chidiebere Uzoma',
+      isPublic: false,
     },
     {
       title: 'Peer-to-Peer Messaging App',
@@ -31,6 +45,7 @@ export default function Projects() {
       link: 'https://jade-sundae-6b3659.netlify.app/',
       github: 'https://github.com/tegajunior/P2P-chat-client',
       owner: 'Chidiebere Uzoma',
+      isPublic: true,
     },
     {
       title: 'Food Ordering App',
@@ -41,6 +56,7 @@ export default function Projects() {
       link: 'https://ruebyscuisine.food/',
       github: 'https://github.com/tegajunior/ruebys-cuisine',
       owner: 'Chidiebere Uzoma',
+      isPublic: false,
     },
     {
       title: 'The Business Hub',
@@ -73,6 +89,7 @@ export default function Projects() {
       link: 'https://specta.sterling.ng/',
       github: 'N/A',
       owner: 'Sterling Bank NG',
+      isPublic: false,
     },
     {
       title: 'Gradely NG',
@@ -83,6 +100,7 @@ export default function Projects() {
       link: 'https://gradely.co/',
       github: 'N/A',
       owner: 'Gradely NG',
+      isPublic: false,
     },
     {
       title: 'Spunky SDX',
@@ -92,6 +110,7 @@ export default function Projects() {
       link: 'https://dapp.spunkysdx.io/',
       github: 'N/A',
       owner: 'Spunky SDX',
+      isPublic: false,
     },
   ]
 

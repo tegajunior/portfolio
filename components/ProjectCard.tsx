@@ -18,6 +18,7 @@ type ProjectProps = {
   link: string
   github: string
   owner: string
+  isPublic: boolean
 }
 
 export function ProjectCard({
@@ -28,6 +29,7 @@ export function ProjectCard({
   link,
   github,
   owner,
+  isPublic,
 }: ProjectProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const maxChars = 150
@@ -101,7 +103,7 @@ export function ProjectCard({
           >
             Project URL
           </a>
-          {owner === 'Chidiebere Uzoma' && (
+          {owner === 'Chidiebere Uzoma' && isPublic && (
             <a
               href={github}
               target="_blank"
