@@ -73,6 +73,7 @@ export default function Projects() {
       link: 'https://thebusinesshub.ng/',
       github: 'N/A',
       owner: 'Sterling Bank NG',
+      isPublic: false,
     },
     {
       title: 'Specta',
